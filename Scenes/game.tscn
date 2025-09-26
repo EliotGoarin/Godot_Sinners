@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bd3rmkw8bs8ds"]
+[gd_scene load_steps=6 format=3 uid="uid://bd3rmkw8bs8ds"]
 
 [ext_resource type="PackedScene" uid="uid://b73pei0h6k2g6" path="res://Scenes/player.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://cf36cesbhtuhl" path="res://Scenes/tile_map_layer.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://nv5efvmiqb8g" path="res://Scenes/Fireball_pickup.tscn" id="4_wowpa"]
+[ext_resource type="PackedScene" uid="uid://4wgnl68k03p5" path="res://Scenes/coin.tscn" id="5_i6g32"]
 [ext_resource type="PackedScene" uid="uid://svvv77wso7ws" path="res://Scenes/boss_1.tscn" id="5_wowpa"]
 
 [node name="Level1" type="Node2D"]
@@ -16,3 +18,9 @@ zoom = Vector2(2.3, 2.3)
 
 [node name="Boss1" parent="." instance=ExtResource("5_wowpa")]
 position = Vector2(1141, -56)
+
+[node name="Fireball_pickup" parent="." instance=ExtResource("4_wowpa")]
+position = Vector2(690, -35)
+
+[node name="coin" parent="." instance=ExtResource("5_i6g32")]
+position = Vector2(1275, -29)
