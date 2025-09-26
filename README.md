@@ -43,38 +43,6 @@ Le dépôt sert de **bac à sable** pour tester des idées et structurer une bas
 
 > Remarque : ce dépôt est un **work in progress**. Le jeu n’a pas d’intention finale “polishée” à ce stade : l’idée est d’apprendre en itérant.
 
----
-
-## Captures / Vidéos
-
-Placez vos captures dans `docs/media/` et référencez‑les ici :
-
-```
-docs/
-  media/
-    screenshot_01.png
-    screenshot_02.png
-```
-
-Exemple :  
-`![Gameplay](docs/media/screenshot_01.png)`
-
----
-
-## Contrôles
-
-> Les actions sont configurées dans **Project → Project Settings → Input Map**.  
-> Par défaut, les actions détectées incluent : `Left`, `Right`, `Jump`, `Hit`, `Dodge`, `ui_inventory`, `Projectile`.
-> Les touches exactes peuvent varier selon vos bindings locaux.
-
-| Action         | Par défaut (suggestion)             | Remarques                          |
-|----------------|-------------------------------------|------------------------------------|
-| Déplacement    | Flèches ou A/D                      |                                     |
-| Saut           | Espace                              | `Jump`                              |
-| Attaque        | J ou Clic gauche                    | `Hit`                               |
-| Projectile     | K ou Clic droit                     | `Projectile`                        |
-| Esquive/Dash   | Shift gauche                        | `Dodge`                             |
-| Inventaire     | I / Tab                             | `ui_inventory`                      |
 
 ---
 
@@ -136,15 +104,6 @@ sinners/
 
 ---
 
-## Notes de dev
-
-- **IA de Boss** : zones `Area2D` pour l’aggro/attaque, fenêtre de dégâts contrôlée via animation (`Attack1`) et/ou timers.  
-- **Collisions** : veillez à aligner **Layer/Mask** entre `BossAttackArea` (mask = layer du Player) et le `Player`.  
-- **État d’attaque** : la variable `is_attacking` empêche le spam ; réinitialisez‑la à la **fin d’anim** et/ou à la **sortie de zone** selon la logique souhaitée.
-- **Inventaire** : éléments de base (items, UI slots). À étendre (stacking, rareté, descriptions, équipements).
-
----
-
 ## Roadmap
 
 - **Niveaux** “réels” : layout jouable, progression, checkpoints, téléporteurs.
@@ -158,30 +117,13 @@ sinners/
 - **Contrôleur** : support manette, vibrations.
 - **Builds** : exports Windows/Linux/macOS/Web + CI (GitHub Actions).
 
----
 
-## Problèmes connus
-
-- Placeholders graphiques et scènes “banc d’essai”.
-- Équilibrage des dégâts/IA rudimentaire.
-- Collisions à peaufiner selon niveaux et assets finaux.
-
----
-
-## Contribuer
-
-Les PR sont les bienvenues pour corriger des bugs ou améliorer les systèmes.  
-Merci de garder des **commits atomiques** et d’inclure un **avant/après** clair (captures si UI/visuel).
-
-1. Fork → branche (`feat/…` ou `fix/…`).
-2. Implémentez + tests de base.
-3. PR avec description concise.
 
 ---
 
 ## Licence
 
-À définir (MIT recommandé pour un projet d’apprentissage).
+MIT 
 
 ---
 
