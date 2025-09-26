@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://nv5efvmiqb8g"]
+
+[ext_resource type="Script" uid="uid://bk5ppc5ncjik3" path="res://Scripts/Pickups/fireball_pickup.gd" id="1_npunp"]
+[ext_resource type="Texture2D" uid="uid://b3l526sb310ay" path="res://Assets/GODOT_Assets/sprites/Fireball.png" id="1_y5wjj"]
+[ext_resource type="Resource" uid="uid://cpbnirgmdgq81" path="res://Scripts/Inventory/items/fireball.tres" id="2_l6qq4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_npunp"]
+radius = 5.09902
+
+[node name="Fireball_pickup" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_npunp")
+item = ExtResource("2_l6qq4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.705882, 0.625)
+texture = ExtResource("1_y5wjj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_npunp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bo3v0c1f6r2sh"]
+
+[ext_resource type="Texture2D" uid="uid://bindydffcpnhf" path="res://Assets/GODOT_Assets/sprites/Dragon.png" id="1_v5fnx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5fnx"]
+atlas = ExtResource("1_v5fnx")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2uv8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5fnx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0snye"]
+radius = 22.1184
+height = 105.529
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-2, 3)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -40)
+sprite_frames = SubResource("SpriteFrames_m2uv8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -40)
+rotation = 2.06073
+shape = SubResource("CapsuleShape2D_0snye")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://ci6atdegyw5jt"]
+
+[ext_resource type="Script" uid="uid://cx0htcsrnofvc" path="res://Scripts/Inventory/Inventory_item.gd" id="1_gokii"]
+[ext_resource type="Texture2D" uid="uid://dkg8ss5b3wjgo" path="res://Assets/GODOT_Assets/sprites/Louche_arme.png" id="2_h322w"]
+
+[resource]
+script = ExtResource("1_gokii")
+name = "Arme_1"
+texture = ExtResource("2_h322w")
+metadata/_custom_type_script = "uid://cx0htcsrnofvc"

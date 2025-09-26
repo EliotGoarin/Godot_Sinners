@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bd3rmkw8bs8ds"]
+
+[ext_resource type="PackedScene" uid="uid://b73pei0h6k2g6" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://cf36cesbhtuhl" path="res://Scenes/tile_map_layer.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://4wgnl68k03p5" path="res://Scenes/coin.tscn" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://nv5efvmiqb8g" path="res://Scenes/Fireball_pickup.tscn" id="4_3dryh"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(3, 3)
+
+[node name="TileMapLayer" parent="." instance=ExtResource("2_qxrlw")]
+
+[node name="ItemPickup" parent="." instance=ExtResource("3_wrm1d")]
+position = Vector2(135, 10)
+
+[node name="Fireball_pickup" parent="." instance=ExtResource("4_3dryh")]
+position = Vector2(-139, 9)

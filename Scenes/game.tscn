@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd3rmkw8bs8ds"]
+
+[ext_resource type="PackedScene" uid="uid://b73pei0h6k2g6" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://cf36cesbhtuhl" path="res://Scenes/tile_map_layer.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://svvv77wso7ws" path="res://Scenes/boss_1.tscn" id="5_wowpa"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
+position = Vector2(916, -44)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2.3, 2.3)
+
+[node name="TileMapLayer" parent="." instance=ExtResource("2_qxrlw")]
+
+[node name="Boss1" parent="." instance=ExtResource("5_wowpa")]
+position = Vector2(1141, -56)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://cpbnirgmdgq81"]
+
+[ext_resource type="Script" uid="uid://cx0htcsrnofvc" path="res://Scripts/Inventory/Inventory_item.gd" id="1_v0g4f"]
+[ext_resource type="Texture2D" uid="uid://b3l526sb310ay" path="res://Assets/GODOT_Assets/sprites/Fireball.png" id="2_wnmdf"]
+
+[resource]
+script = ExtResource("1_v0g4f")
+name = "fireball"
+texture = ExtResource("2_wnmdf")
+metadata/_custom_type_script = "uid://cx0htcsrnofvc"
