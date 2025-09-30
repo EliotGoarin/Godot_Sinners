@@ -108,7 +108,7 @@ sinners/
 
 - **Niveaux** “réels” : layout jouable, progression, checkpoints, téléporteurs.
 - **Direction artistique** : tilesets, personnages, VFX/SFX, UI propre.
-- **Boss patterns** : télégraphie claire, phase 2, projectiles pattern, vulnérabilités.
+- **Boss patterns** : IA complexe, télégraphie claire, phase 2, projectiles pattern, vulnérabilités.
 - **Système d’armes** : dégâts, cadence, portée, stat mods, upgrade.
 - **Inventaire avancé** : catégories, tooltips, drag & drop, raccourcis.
 - **Audio** : SFX actions/joueur, musique, mixage de base.
