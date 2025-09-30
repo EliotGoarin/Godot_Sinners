@@ -115,7 +115,7 @@ sinners/
 - **Sauvegarde** : système de save/load (ConfigFile, JSON, autoload).
 - **Options** : remapping des touches, volume, vidéo.
 - **Contrôleur** : support manette, vibrations.
-- **Builds** : exports Windows/Linux/macOS/Web + CI (GitHub Actions).
+- **Builds** : exports Windows/macOS/Web + CI (GitHub Actions).
 
 
 
