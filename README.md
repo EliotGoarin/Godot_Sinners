@@ -1,4 +1,4 @@
-# Sinners
+# Godot Game :  Sinners
 
 [![Engine](https://img.shields.io/badge/Godot-4.4-blue)](https://godotengine.org/)
 [![Status](https://img.shields.io/badge/status-Work_in_Progress-orange)](#)
